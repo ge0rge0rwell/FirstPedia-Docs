@@ -1,8 +1,6 @@
 # Welcome
 
-FTCLib is a library designed to be the only library you'll need for FTC programming. The project was initially meant to be a port of WPILib, which is the standard programming library for FRC that almost all teams use. However, with FTC, there are a ton of libraries that not many people have heard about, especially rookie teams who are just starting. The goal of FTCLib is to improve the initial programming experience for new members as well as greatly enhance the efficiency of code for veterans.
+FirstPedia is designed to be the only platform that FTC and FRC teams will ever need, centralising everything teams need to know in a single website created by Cartesian Robotics #25153, we aim to make learning FTC and FRC super easy.
 
-We support the transition of teams from programming systems like Blocks and OnBot Java to Android Studio. One of our goals is to make this transition easier for you if you have not already.
-
-Please read the [installation](installation.md) instructions before getting started with anything!
+This platform will include videos,documentations for different areas of FTC; such as but not limited to PR, Software, Electronics, Portfolio Management and Mechanics.It will also feature content for FRC,such as podcasts with FRC Dean's List Winners and their Dean's List essays.
 
