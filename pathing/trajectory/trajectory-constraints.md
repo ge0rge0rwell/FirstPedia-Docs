@@ -11,12 +11,12 @@ FTCLib includes a set of predefined constraints that users can utilize when gene
 * `CentripetalAccelerationConstraint`: Limits the centripetal acceleration of the robot as it traverses along the trajectory. This can help slow down the robot around tight turns.
 * `DifferentialDriveKinematicsConstraint`: Limits the velocity of the robot around turns such that no wheel of a differential-drive robot goes over a specified maximum velocity.
 * `DifferentialDriveVoltageConstraint`: Limits the acceleration of a differential drive robot such that no commanded voltage goes over a specified maximum.
-* `MecanumDriveKinematicsConstraint`: Limits the velocity of the robot around turns such that no wheel of a [mecanum](../../features/drivebases.md#mecanum)-drive robot goes over a specified maximum velocity.
+* `MecanumDriveKinematicsConstraint`: Limits the velocity of the robot around turns such that no wheel of a [mecanum](../../software/drivebases.md#mecanum)-drive robot goes over a specified maximum velocity.
 * `SwerveDriveKinematicsConstraint`: Limits the velocity of the robot around turns such that no wheel of a swerve-drive robot goes over a specified maximum velocity.
 
 ### Note
 
-The `DifferentialDriveVoltageConstraint` only ensures that theoretical voltage commands do not go over the specified maximum using a [feedforward model](../../features/controllers.md#feedforward-control). If the robot were to deviate from the reference while tracking, the commanded voltage may be higher than the specified maximum.
+The `DifferentialDriveVoltageConstraint` only ensures that theoretical voltage commands do not go over the specified maximum using a [feedforward model](../../software/controllers.md#feedforward-control). If the robot were to deviate from the reference while tracking, the commanded voltage may be higher than the specified maximum.
 
 ## Creating a Custom Constraint
 
@@ -41,4 +41,3 @@ public MinMax getMinMaxAccelerationMetersPerSecondSq(
 ```
 
 The `MaxVelocity` method should return the maximum allowed velocity for the given pose, curvature, and original velocity of the trajectory without any constraints. The `MinMaxAcceleration` method should return the minimum and maximum allowed acceleration for the given pose, curvature, and constrained velocity.
-

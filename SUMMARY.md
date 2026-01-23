@@ -1,17 +1,15 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Installation](installation.md)
 
-## Features
+## Software
 
-* [Hardware](features/hardware/README.md)
-  * [Motors](features/hardware/motors.md)
-* [Gamepad](features/gamepad-extensions.md)
-* [Drivebases](features/drivebases.md)
-* [Geometry](features/geometry.md)
-* [Controllers](features/controllers.md)
-* [Utility Functions](features/util.md)
+* [Introduction To FTC Programming](software/hardware.md)
+* [Gamepad](software/gamepad-extensions.md)
+* [Drivebases](software/drivebases.md)
+* [Geometry](software/geometry.md)
+* [Controllers](software/controllers.md)
+* [Utility Functions](software/util.md)
 
 ## Vision
 
@@ -52,8 +50,7 @@
   * [Convenience Features](command-base/command-system/convenience-commands.md)
 * [Old Commands](command-base/old-commands.md)
 
----
+***
 
 * [Support FTCLib](support-ftclib.md)
 * [Additional Reading](additional-reading.md)
-
