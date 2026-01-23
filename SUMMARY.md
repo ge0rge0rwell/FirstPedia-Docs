@@ -6,7 +6,7 @@
 
 * [Introduction To FTC Programming](software/hardware.md)
 * [FTC Programming Tools](software/gamepad-extensions.md)
-* [Drivebases](software/drivebases.md)
+* [Installation](software/drivebases.md)
 * [Geometry](software/geometry.md)
 * [Controllers](software/controllers.md)
 * [Utility Functions](software/util.md)
