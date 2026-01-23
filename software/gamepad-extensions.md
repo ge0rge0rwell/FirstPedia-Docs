@@ -24,4 +24,6 @@ Android Studio is widely used in the FTC community.It is often considered a powe
 
 <figure><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYqPshtcc72LfIovmL7yYsotZbN8e67Ck10WVIux1e6WjjkdgCFH5_KWRB9RfBKogO6vJgt1peMuuqEyUBsMv20xohGPyZFOBiuLU-Rn27Eq33biA0lUObGvd8ToAnNuygNSoRBpBmltRADd0vpaMXGklP7L_xB9LqIlZ1fjSN6vK1i2vc_0KP-aTo/s1600/Android%20Studio%20-%20Social.png" alt=""><figcaption></figcaption></figure>
 
-##
+## Which One Are We Going To Use?
+
+We are going to focus on Android Studio in these courses because it provides us the flexibility and the wide range of support for hardware(motors,encoders,cameras etc).
