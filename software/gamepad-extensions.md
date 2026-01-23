@@ -1,89 +1,22 @@
----
-description: package com.arcrobotics.ftclib.gamepad
----
+# FTC Programming Tools
 
-# Gamepad
+As i mentioned earlier,there are various ways to program your FTC robot.In this course,you are going to learn about them.
 
-The FTCLib provides enhanced Gamepad features. These classes are essentially extensions of the stock FTC SDK Gamepad features but with easier implementation methods.
+## Onbot Java
 
-## GamepadKeys
+Onbot Java is a web based programming platform based on Java.It usually comes as the default programming language of your robot and it is used especially by rookie teams that do not use complex subsystems or additional integrations.
 
-Provides enum representations of the buttons, D-Pad, bumpers, and triggers. Buttons, D-Pad, and bumpers are stored in `GamepadKeys.Button` and triggers are stored in `GamepadKeys.Trigger`.
+<figure><img src="https://i0.wp.com/pdocs.kauailabs.com/navx-micro/wp-content/uploads/2020/07/OnBotJavaAddFile.png?fit=665%2C398&#x26;ssl=1" alt=""><figcaption></figcaption></figure>
 
-| Buttons |
-| :--- |
-| Y |
-| X |
-| A |
-| B |
-| LEFT\_BUMPER |
-| RIGHT\_BUMPER |
-| BACK |
-| START |
-| DPAD\_UP |
-| DPAD\_DOWN |
-| DPAD\_LEFT |
-| DPAD\_RIGHT |
-| LEFT\_STICK\_BUTTON |
-| RIGHT\_STICK\_BUTTON |
+## FTC Blocks
 
-| Trigger |
-| :--- |
-| LEFT\_TRIGGER |
-| RIGHT\_TRIGGER |
+Another way to program your robot, also based on the platform that Onbot Java uses.This method is the least used method to program a FTC robot.It is usually used by rookie teams that don't want to go into the complexity of a text based programming language.
 
-```java
-// these are from the GamepadButton class that is used
-// for command-based frameworks
-GamepadButton grabButton = new GamepadButton(
-    gamepad1, GamepadKeys.Button.A
-);
-GamepadButton releaseButton = new GamepadButton(
-    gamepad2, GamepadKeys.Button.B
-);
+<figure><img src="https://github.com/ftctechnh/ftc_app/wiki/images/Writing-an-Op-Mode-with-FTC-Blocks/BlocksPicture1New.jpg" alt=""><figcaption></figcaption></figure>
 
-GamepadEx gamepadEx = new GamepadEx(gamepad1);
-```
+&#x20;
 
-## GamepadEx
 
-An extension of the stock FTC SDK `Gamepad` class. Constructed simply from a Gamepad. Provides six intuitive value-getting methods:
-
-* `getButton()`: Given a `GamepadKeys.Button`, this method will check if that Button is pressed, returning a boolean of whether that Button is pressed.
-
-```java
-gamepadEx.getButton(GamepadKeys.Button.A);
-```
-
-* `getTrigger()`: Given a `GamepadKeys.Trigger`, this method will return the value of the Trigger \(0 if unpressed, 1 if fully depressed\).
-
-```java
-gamepadEx.getTrigger(GamepadKeys.Trigger.RIGHT_TRIGGER);
-```
-
-* `getLeftY()`: Returns the value of the y-axis of the left joystick \(note that the value returned is the opposite of what would be returned from the standard gamepad object\).
-
-```java
-gamepadEx.getLeftY();
-```
-
-* `getRightY()`: Returns the value of the y-axis of the right joystick
-
-```java
-gamepadEx.getRightY();
-```
-
-* `getLeftX()`: Returns the value of the x-axis of the left joystick
-
-```java
-gamepadEx.getLeftX();
-```
-
-* `getRightX()`: Returns the value of the x-axis of the right joystick
-
-```text
-gamepadEx.getRightX();
-```
 
 ## KeyReader
 
@@ -91,8 +24,8 @@ The `KeyReader` interface is the base for objects that monitor an individual but
 
 * `readValue()`: Reads the current value of the key, true or false, and updates the values used by the reader. Returns nothing. This must be called once every loop.
 * `isDown()` : Checks if key is currently down. Will return a boolean of whether that key is pressed.
-* `wasJustPressed()` : Returns boolean whether the key is pressed, but only if it was previously not pressed. 
-* `wasJustReleased()` : Returns boolean indicating whether the key is not pressed, but only if it was previously pressed. 
+* `wasJustPressed()` : Returns boolean whether the key is pressed, but only if it was previously not pressed.
+* `wasJustReleased()` : Returns boolean indicating whether the key is not pressed, but only if it was previously pressed.
 * `stateJustChanged` : Returns boolean indicating that the key's value has switched.
 
 ## TriggerReader
@@ -127,7 +60,7 @@ ButtonReader reader = new ButtonReader(
 );
 ```
 
-* `ButtonReader(GamepadEx gamepad, GamepadKeys.Button button)`: Constructs a new Button Reader with a `GamepadEx` gamepad and a `GamepadKeys.Button` button. 
+* `ButtonReader(GamepadEx gamepad, GamepadKeys.Button button)`: Constructs a new Button Reader with a `GamepadEx` gamepad and a `GamepadKeys.Button` button.
 * `ButtonReader(BooleanSupplier supplier)`: Constructs a new Button Reader using the value of a boolean supplier instead of a gamepad, which allows reading value states easily without a gamepad.
 
 ```java
@@ -194,4 +127,3 @@ while (...) {
   aReader.readValue();
 }
 ```
-
