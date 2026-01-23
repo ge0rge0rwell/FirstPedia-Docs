@@ -22,4 +22,6 @@ Another way to program your robot, also based on the platform that Onbot Java us
 
 Android Studio is widely used in the FTC community.It is often considered a powerhouse because it has so many features like code autocomplete and debugging.It is also a full scale desktop app maintained by Google so it is very stable and scalable.Whether you are building a basic drivetrain or a complex code with subsystems it always meets your needs.
 
+<figure><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYqPshtcc72LfIovmL7yYsotZbN8e67Ck10WVIux1e6WjjkdgCFH5_KWRB9RfBKogO6vJgt1peMuuqEyUBsMv20xohGPyZFOBiuLU-Rn27Eq33biA0lUObGvd8ToAnNuygNSoRBpBmltRADd0vpaMXGklP7L_xB9LqIlZ1fjSN6vK1i2vc_0KP-aTo/s1600/Android%20Studio%20-%20Social.png" alt=""><figcaption></figcaption></figure>
+
 ##
