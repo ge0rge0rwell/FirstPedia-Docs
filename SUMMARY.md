@@ -11,3 +11,4 @@
 ## Portfolio Management
 
 * [Introduction](portfolio-management/odometry.md)
+* [Planning and Organizing Outreach Events](portfolio-management/planning-and-organizing-outreach-events.md)
